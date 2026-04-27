@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meldinger</title>
+    <link rel="stylesheet" href="meldinger.css" />
+    <script src="meldinger.js" defer></script>
+  </head>
+  <body>
+    <div class="block">
+      <nav class="nav">
+        <a href="../hjemmeside/date.html">
+          <div class="footer-logo1">FINNDATE</div>
+        </a>
+
+        <div class="nav-links">
+          <a href="..//for bedrifter/for-bedrifter.html" class="nav-item"
+            >For bedrifter</a
+          >
+          <div class="notification-wrapper">
+            <a href="#" class="nav-item" id="notification-btn">Varslinger</a>
+
+            <div class="notification-box" id="notification-box">
+              <p>🔔 Du har en ny melding</p>
+              <p>❤️ Noen likte profilen din</p>
+              <p>💬 Ny chat fra Angelina</p>
+            </div>
+          </div>
+          <a href="#" class="nav-item">Ny annonse</a>
+          <a href="../meldinger/meldinger.html" class="nav-item">Meldinger</a>
+          <a href="../loginn/loginn.html" class="nav-item" id="login-link"
+            >Logg inn</a
+          >
+        </div>
+      </nav>
+    </div>
+
+    <main class="messages-page">
+      <section class="messages-wrapper">
+        <aside class="chat-list">
+          <div class="chat-list-header">
+            <h1>Meldinger</h1>
+            <input type="text" placeholder="Søk i meldinger" />
+          </div>
+
+          <div class="chat-item active" data-id="angelina">
+            <img src="../hjemmeside/last ned (7).jpg" alt="Angelina" />
+            <div class="chat-info">
+              <h3>Angelina, 30</h3>
+              <p>Jeg vil stjele alle pengene dine mens du sover</p>
+            </div>
+            <span class="chat-time">12:04</span>
+          </div>
+
+          <div class="chat-item" data-id="olivia">
+            <img src="../hjemmeside/щдшмш.jpg" alt="Olivia" />
+            <div class="chat-info">
+              <h3>Olivia, 25</h3>
+              <p>Ghoster etter 2 meldinger</p>
+            </div>
+            <span class="chat-time">11:18</span>
+          </div>
+
+          <div class="chat-item" data-id="emma">
+            <img src="../hjemmeside/324860_2.jpg" alt="Emma" />
+            <div class="chat-info">
+              <h3>Emma, 25</h3>
+              <p>Ikke ute etter noe seriøst</p>
+            </div>
+            <span class="chat-time">I går</span>
+          </div>
+
+          <div class="chat-item" data-id="luisa">
+            <img
+              src="../hjemmeside/b9dde5568a79c429f1a4a7123a59e16e.jpg"
+              alt="Luisa"
+            />
+            <div class="chat-info">
+              <h3>Luisa, 33</h3>
+              <p>Bor fortsatt hos mamma</p>
+            </div>
+            <span class="chat-time">I går</span>
+          </div>
+        </aside>
+
+        <section class="chat-window">
+          <div class="chat-window-header">
+            <div class="chat-user">
+              <img
+                id="chat-user-image"
+                src="../hjemmeside/last ned (7).jpg"
+                alt="Angelina"
+              />
+              <div>
+                <h2 id="chat-user-name">Angelina, 30</h2>
+                <p id="chat-user-status">Aktiv for 2 minutter siden</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-messages" id="chat-messages"></div>
+
+          <form class="chat-input" id="chat-form">
+            <input
+              type="text"
+              id="message-input"
+              placeholder="Skriv en melding..."
+            />
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

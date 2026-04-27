@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logg inn</title>
+    <link rel="stylesheet" href="loginn.css" />
+    <script src="loginn.js" defer></script>
+  </head>
+  <body>
+    <div class="block">
+      <nav class="nav">
+        <a href="../hjemmeside/date.html"
+          ><div class="footer-logo1">FINNDATE</div></a
+        >
+
+        <div class="nav-links">
+          <a href="..//for bedrifter/for-bedrifter.html" class="nav-item"
+            >For bedrifter</a
+          >
+          <div class="notification-wrapper">
+            <a href="#" class="nav-item" id="notification-btn">Varslinger</a>
+
+            <div class="notification-box" id="notification-box">
+              <p>🔔 Du har en ny melding</p>
+              <p>❤️ Noen likte profilen din</p>
+              <p>💬 Ny chat fra Angelina</p>
+            </div>
+          </div>
+          <a href="#" class="nav-item">Ny annonse</a>
+          <a href="#" class="nav-item" id="messages-link">Meldinger</a>
+          <a href="../loginn/loginn.html" class="nav-item" id="login-link"
+            >Logg inn</a
+          >
+        </div>
+      </nav>
+    </div>
+
+    <div class="reg">
+      <form class="register-form" novalidate>
+        <h2 id="form-title">REGISTRASJON</h2>
+
+        <input id="text" type="text" placeholder="Navn" />
+        <input id="email" type="email" placeholder="Email" required />
+        <input id="password" type="password" placeholder="Passord" required />
+
+        <button type="submit" id="submit">Registrer</button>
+
+        <p id="toggle-text">
+          Har du konto? <span id="toggle-mode">Logg inn</span>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min profil</title>
+    <link rel="stylesheet" href="kabinet.css" />
+    <script src="kabinet.js" defer></script>
+  </head>
+  <body>
+    <div class="block">
+      <nav class="nav">
+        <a href="../hjemmeside/date.html"
+          ><div class="footer-logo1">FINNDATE</div></a
+        >
+
+        <div class="nav-links">
+          <a href="..//for bedrifter/for-bedrifter.html" class="nav-item"
+            >For bedrifter</a
+          >
+          <div class="notification-wrapper">
+            <a href="#" class="nav-item" id="notification-btn">Varslinger</a>
+
+            <div class="notification-box" id="notification-box">
+              <p>🔔 Du har en ny melding</p>
+              <p>❤️ Noen likte profilen din</p>
+              <p>💬 Ny chat fra Angelina</p>
+            </div>
+          </div>
+          <a href="#" class="nav-item">Ny annonse</a>
+          <a href="#" class="nav-item" id="messages-link">Meldinger</a>
+          <a href="../loginn/loginn.html" class="nav-item" id="login-link"
+            >Logg inn</a
+          >
+        </div>
+      </nav>
+    </div>
+    <div class="cabinet">
+      <div class="card">
+        <h1>Min profil</h1>
+        <p><strong>Navn:</strong> <span id="user-name"></span></p>
+        <p><strong>Email:</strong> <span id="user-email"></span></p>
+
+        <button id="logout">Logg ut</button>
+      </div>
+    </div>
+  </body>
+</html>
